@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1: Multi-Break Grid</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: sans-serif;
+        }
+
+        .lab-header {
+            background: #0d6efd;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .grid-box {
+            background: white;
+            border: 2px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 1rem;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="lab-header text-center">
+        <div class="container">
+            <h1>Lab 01: Multi-Break Grid</h1>
+            <p>Responsive Layout using Bootstrap 12-Column System</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Instructions -->
+        <section class="alert alert-info shadow-sm mb-5">
+            <h5>Quick Task:</h5>
+            <ol>
+                <li>Mobile → 1 item per row</li>
+                <li>Tablet → 2 items per row</li>
+                <li>Desktop → 3 items per row</li>
+            </ol>
+        </section>
+
+        <!-- Grid -->
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 1</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 2</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 3</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 4</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 5</div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="grid-box shadow-sm">Card 6</div>
+            </div>
+
+        </div>
+
+        <!-- Concept -->
+        <div class="card mt-5">
+            <div class="card-body">
+                <h5 class="text-primary">Concept Summary</h5>
+                <p>
+                    Bootstrap uses a <strong>12-column grid system</strong>.
+                    <code>col-4</code> means 4/12 width.
+                    Using <code>col-md</code> and <code>col-lg</code>,
+                    layouts change based on screen size.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center mt-5 text-muted py-3">
+        <small>FSD Lab Series © 2026</small>
+    </footer>
+
+</body>
+</html>
